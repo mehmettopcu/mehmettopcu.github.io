@@ -27,7 +27,7 @@ This page showcases all of my public repositories on GitHub. You can explore the
 
 ## About Me
 
-I am a software developer with a passion for open-source projects. My work includes everything from web development to data science and automation tools.
+I am an experienced OpenStack expert, DevOps engineer, and system administrator with a strong background in automation and cloud-native technologies. I specialize in deploying and managing scalable systems, orchestrating Kubernetes clusters, and integrating DevOps practices into the development lifecycle.
 
 Feel free to check out my repositories, and don't hesitate to open an issue or pull request if you want to contribute!
 
