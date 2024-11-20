@@ -4,18 +4,26 @@ This page showcases all of my public repositories on GitHub. You can explore the
 
 ## My GitHub Repositories
 
-Here are some of my most notable repositories:
-
-<ul>
-  {% for repo in site.github.repositories %}
-    <li>
-      <a href="https://github.com/{{ repo.owner.login }}/{{ repo.name }}">
-        {{ repo.name }}
-      </a>
-      - {{ repo.description | default: "No description available" }}
-    </li>
-  {% endfor %}
+<ul id="repo-list">
+  <!-- Repositories will be loaded here -->
 </ul>
+
+<script>
+  // Replace with your GitHub username
+  const username = 'mehmettopcu';
+
+  fetch(`https://api.github.com/users/${username}/repos`)
+    .then(response => response.json())
+    .then(repos => {
+      const repoList = document.getElementById('repo-list');
+      repos.forEach(repo => {
+        const repoItem = document.createElement('li');
+        repoItem.innerHTML = `<a href="https://github.com/${repo.owner.login}/${repo.name}">${repo.name}</a> - ${repo.description || 'No description available'}`;
+        repoList.appendChild(repoItem);
+      });
+    })
+    .catch(error => console.error('Error fetching repositories:', error));
+</script>
 
 ## About Me
 
