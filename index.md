@@ -34,7 +34,6 @@ Feel free to check out my repositories, and don't hesitate to open an issue or p
 ## Contact
 
 - GitHub: [@mehmettopcu](https://github.com/mehmettopcu)
-- Email: [your-email@example.com](mailto:your-email@example.com)
 
 ### Support or Questions
 
