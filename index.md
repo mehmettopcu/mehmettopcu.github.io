@@ -1,37 +1,33 @@
-## Welcome to GitHub Pages
+# Welcome to My GitHub Pages
 
-You can use the [editor on GitHub](https://github.com/mehmettopcu/mehmettopcu.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+This page showcases all of my public repositories on GitHub. You can explore the various projects I've worked on and contribute if you'd like!
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## My GitHub Repositories
 
-### Markdown
+Here are some of my most notable repositories:
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+<ul>
+  {% for repo in site.github.repositories %}
+    <li>
+      <a href="https://github.com/{{ repo.owner.login }}/{{ repo.name }}">
+        {{ repo.name }}
+      </a>
+      - {{ repo.description | default: "No description available" }}
+    </li>
+  {% endfor %}
+</ul>
 
-```markdown
-Syntax highlighted code block
+## About Me
 
-# Header 1
-## Header 2
-### Header 3
+I am a software developer with a passion for open-source projects. My work includes everything from web development to data science and automation tools.
 
-- Bulleted
-- List
+Feel free to check out my repositories, and don't hesitate to open an issue or pull request if you want to contribute!
 
-1. Numbered
-2. List
+## Contact
 
-**Bold** and _Italic_ and `Code` text
+- GitHub: [@mehmettopcu](https://github.com/mehmettopcu)
+- Email: [your-email@example.com](mailto:your-email@example.com)
 
-[Link](url) and ![Image](src)
-```
+### Support or Questions
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/mehmettopcu/mehmettopcu.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+If you have any questions about my repositories or would like to collaborate, feel free to reach out via [email](mailto:your-email@example.com) or open an issue in one of the repositories.
